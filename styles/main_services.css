@@ -1,0 +1,163 @@
+.services {
+    background-color: var(--clr-yellow);
+    height: auto;
+    padding-block: 5rem;
+    position: relative;
+}
+
+.services::before,
+.services::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: var(--clr-background);
+}
+
+.services::before {
+    top: 20px;
+}
+
+.services::after {
+    bottom: 20px;
+}
+
+.services_list {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden; 
+
+}
+
+
+.services_list_inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style: none;
+}
+
+.services_list_inner button {
+    padding: 0.5rem 0.25rem;
+    background-color: var(--clr-background);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    from {
+        transform: translateY(0px);
+    }
+}
+
+
+
+.services_list_inner button:hover {
+    transform: translateY(-5px);
+    outline: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.tab.active {
+    outline: 2px solid black;
+    font-weight: 500;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-content-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.tab-content img {
+    height: 300px;
+    min-width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.tab-content > img {
+    scale: .8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .services_list_inner {
+        display: flex;
+        gap: 0.5rem;
+        list-style: none;
+    }
+    .services_list_inner button {
+        height: auto;
+        width: 150px;
+        font-size: var(--size-sm);
+    }
+    .tab-content-info{
+        font-size: var(--size-base);
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .services_list_inner button {
+        height: auto;
+        min-width: 120px;
+        font-size: var(--size-sm);
+    }
+    .tab-content-info{
+        max-width: 40%;
+        font-size: var(--size-base);
+    }
+
+
+}
+@media (min-width: 1440px) {
+    .services_list_inner button {
+        height: auto;
+        width: 150px;
+        font-size: var(--size-sm);
+    }
+
+    .tab-content-info{
+        max-width: 30%;
+        font-size: var(--size-base);
+    }
+
+    .tab-content img {
+        max-width: 50%;
+    }
+    
+}
+
+

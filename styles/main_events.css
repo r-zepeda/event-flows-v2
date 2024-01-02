@@ -1,0 +1,133 @@
+.events {
+    height: 600px;
+    padding-block: 5rem;
+}
+
+.event_cards_wrapper {
+    --gap : 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: var(--gap);
+    animation: slide-in 0.3s ease forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    transform: translateX(100px);
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.event_cards_wrapper > * {
+    flex: 1;
+}
+
+.card_accent1 {
+    background-color: rgb(248, 32, 95);
+}
+
+.card_accent2 {
+    background-color: rgb(68, 192, 181);
+}
+
+.card_accent3 {
+    background-color: rgb(0, 142, 214);
+}
+
+
+
+.event_cards {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 230px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+}
+.card_initial_title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.card_details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 50%;
+    padding: 1rem;
+    color: black;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+    transform: translateY(20px);
+}
+
+.event_cards:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    .card_initial_title {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    .card_details {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.event_cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.events_read_more{
+    font-size: var(--size-xs);
+    padding: 0.325rem;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .card_details p {
+        font-size: var(--size-xs);
+        color: black
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .card_details p {
+        font-size: var(--size-xs);
+        color: black
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .card_details p {
+        font-size: var(--size-base);
+        color: black
+    }
+}

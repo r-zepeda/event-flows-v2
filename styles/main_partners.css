@@ -1,0 +1,40 @@
+.partners {
+    height: 300px;
+    background-color: rgb(53, 53, 53);
+    color: var(--clr-clear);
+}
+
+.partners .section_title > * {
+    color: var(--clr-clear);
+}
+
+.scroller__inner img {
+    filter: invert(1);
+    height: 50px;
+}
+
+.scroller {
+    max-width: 100%;
+    margin-inline: 2rem;
+    padding: 2rem;
+    mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+    overflow: hidden;
+}
+
+.scroller__inner:hover {
+    animation-play-state: paused;
+}
+
+.scroller__inner {
+    width: max-content;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    animation: scroll 35s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 1rem));
+    }
+}

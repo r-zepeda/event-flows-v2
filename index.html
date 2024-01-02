@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+      <header class="header">
+        <img src="./assets/images/logo.png" alt="">
+        <div class="header__list">
+          <ul>
+            <li id="index" class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <a href="test.html" class="button">Contact Us</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </header>
+
+      <main>
+        <div class="hero section">
+          <div class="hero__inner">
+            <div class="hero__inner1">
+              <div style="font-family: 'Outfit', sans-serif;">
+                <h1>embark on a</h1>
+                <h1 class="hero__changing" id="changingText">delightful</h1>
+                <h1>experience</h1>    
+                <script src="./src/scripts.js"></script>
+              </div>
+              <p>Experience the extraordinary: Where moments become memories, <br> join us for an unforgettable journey at Event Flows Bangkok</p>
+              <a href="#" class="button">Get Started</a>
+            </div>
+            <img src="./assets/images/hero_image.png" alt="">
+          </div>
+
+
+          <div class="hero__socials">
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+
+            <div class="hero__socials__divider"></div>
+          </div>
+        </div>
+
+        <div class="services section">
+          <div class="section_title">
+            <h2>our <span style="color: var(--clr-background);">services</span></h2>
+            <p>We can infiltrate any sort of event where our knowledge and experience can offer value, improve the experience for attendees, and create a successful gathering.</p>
+          </div>
+          <div class="services_list slider">
+            <ul class="services_list_inner">
+              <button id="tab1s" class="tab active" onclick="openTab('tab1','tab1s')">Trade Show and Exhibition</button>
+              <button id="tab2s" class="tab" onclick="openTab('tab2','tab2s')">Conference and Summit</button>
+              <button id="tab3s" class="tab" onclick="openTab('tab3','tab3s')">Music Festival and Concert</button>
+              <button id="tab4s" class="tab" onclick="openTab('tab4','tab4s')">Corporate Events</button>
+              <button id="tab5s" class="tab" onclick="openTab('tab5','tab5s')">Social and Cultural</button>
+              <button id="tab6s" class="tab" onclick="openTab('tab6','tab6s')">Sporting</button>
+              <button id="tab7s" class="tab" onclick="openTab('tab7','tab7s')">Wedding and Celebration</button>
+            </ul>
+          </div>
+
+          <div id="tab1" class="tab-content">
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
+            <div class="tab-content-info">
+              <h3>Trade Show and Exhibitions</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
+          </div>
+          <div id="tab2" class="tab-content" style="display:none">
+
+          </div>
+          <div id="tab3" class="tab-content" style="display:none">
+
+          </div>
+          <div id="tab4" class="tab-content" style="display:none">
+
+          </div>
+          <div id="tab5" class="tab-content" style="display:none">
+
+          </div>
+          <div id="tab6" class="tab-content" style="display:none">
+
+          </div>
+          <div id="tab7" class="tab-content" style="display:none">
+
+          </div>
+        </div>
+
+        <div class="events section">
+          <div class="section_title">
+            <h2>our <span>events</span></h2>
+            <p>Our team at Event Flow Bangkok understands the importance of creating a seamless and memorable event experience. We provide a broad variety of services to guarantee that every detail of your special occasion is taken care of.</p>
+          </div>
+
+          <div class="event_cards_wrapper">
+            <div class="event_cards">
+              <img src="./assets/images/services_concert.jpg" alt="">
+              <div class="card_initial_title">
+                <h2>Tourism</h2>
+              </div>
+              <div class="card_details">
+                <h3>Tourism</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="test.html" class="button events_read_more card_accent1">Read More</a>
+              </div>
+            </div>
+
+            <div class="event_cards">
+              <img src="./assets/images/services_conference.jpg" alt="">
+              <div class="card_initial_title">
+                <h2>Tourism</h2>
+              </div>
+              <div class="card_details">
+                <h3>Tourism</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="test.html" class="button events_read_more card_accent2">Read More</a>
+              </div>
+            </div>
+            <div class="event_cards">
+              <img src="./assets/images/services_sporting.jpg" alt="">
+              <div class="card_initial_title">
+                <h2>Tourism</h2>
+              </div>
+              <div class="card_details">
+                <h3>Tourism</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <a href="test.html" class="button events_read_more card_accent3">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="partners section">
+          <div class="section_title">
+            <h2>our partners</h2>
+            <p>Our team at Event Flow Bangkok understands the importance of creating a seamless and memorable event experience. We provide a broad variety of services to guarantee that every detail of your special occasion is taken care of.</p>
+          </div>
+
+          <div class="scroller">
+            <div class="scroller__inner">
+              <img src="./assets/images/partners/3m.svg" alt="">
+              <img src="./assets/images/partners/barstool-store.svg" alt="">
+              <img src="./assets/images/partners/budweiser.svg" alt="" srcset="">
+              <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="">
+              <img src="./assets/images/partners/forbes.svg" alt="" srcset="">
+              <img src="./assets/images/partners/macys.svg" alt="" srcset="">
+              <img src="./assets/images/partners/menshealth.svg" alt="" srcset="">
+              <img src="./assets/images/partners/mrbeast.svg" alt="">
+              <img src="./assets/images/partners/3m.svg" alt="">
+              <img src="./assets/images/partners/barstool-store.svg" alt="">
+              <img src="./assets/images/partners/budweiser.svg" alt="" srcset="">
+              <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="">
+              <img src="./assets/images/partners/forbes.svg" alt="" srcset="">
+              <img src="./assets/images/partners/macys.svg" alt="" srcset="">
+              <img src="./assets/images/partners/menshealth.svg" alt="" srcset="">
+              <img src="./assets/images/partners/mrbeast.svg" alt="">
+            </div>
+        </div>
+      </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

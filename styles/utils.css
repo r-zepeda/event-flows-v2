@@ -1,0 +1,77 @@
+@keyframes scroll-reveal {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+span {
+    color: rgba(0, 0, 0, 0.1);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, var(--clr-yellow), var(--clr-yellow));
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+
+}
+
+span {
+    animation-range-start: contain 20vh;
+    animation-range-end: contain 30vh;
+}
+
+.button {
+    background-color: var(--clr-yellow);
+    border-radius: 5px;
+    color: var(--clr-slate);
+    font-size: var(--size-base);
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    outline: 2px solid rgba(0, 0, 0, 1);
+    transform: translateY(-3px);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    margin-block-end: 2rem;
+}
+
+.section_title {
+    text-align: center;
+    font-size: var(--size-base);
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .section_title > h2{
+        font-size: var(--size-4xl);
+    }
+    .button {
+        padding: 4px 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section_title > h2{
+        font-size: var(--size-5xl);
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section_title > h2{
+        font-size: var(--size-6xl);
+    }
+    .button {
+        padding: 16px 32px;
+    }
+}

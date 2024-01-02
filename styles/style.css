@@ -1,0 +1,89 @@
+:root {
+    --clr-background: rgb(240, 234, 216);
+    --clr-clear: white;
+    --clr-header: rgba(240, 234, 216, 0.8);
+    --clr-dark: rgba(0,0,0,1);
+    --clr-yellow: rgb(245, 181, 57);
+    --clr-slate: rgb(37, 52, 65);
+    --clr-salmon: rgb(249, 176, 143);
+    --clr-powderblue: rgb(149, 203, 200);
+
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 0.9275rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+    --header-height: 60px;
+
+}
+
+
+
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-background);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-yellow); /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Make the scrollbar thumb rounded */
+    border: 2px solid var(--clr-background);
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1,
+p {
+    color: var(--clr-slate);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
