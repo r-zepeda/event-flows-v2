@@ -7,6 +7,7 @@ import '../styles/main_services.css'
 import '../styles/main_events.css'
 import '../styles/main_partners.css'
 import '../styles/about_hero.css'
+import '../styles/services_cards.css'
 // import './scripts'
 
 
