@@ -57,3 +57,17 @@ footer {
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .footer_section_wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}

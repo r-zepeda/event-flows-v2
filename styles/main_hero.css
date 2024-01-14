@@ -82,7 +82,30 @@
     .hero {
         display: flex;
         flex-direction: column;
+        padding-inline: 0;
     }
+    .hero__inner {
+        flex-direction: column;
+
+    }
+    .hero__inner img {
+        display: none;
+    }
+    .hero__socials {
+        flex-direction: column;
+    }
+    .hero__socials__divider {
+        display: none;
+    }
+
+    .events {
+        display: none;
+    }
+
+    .tabcontent {
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width: 768px) {

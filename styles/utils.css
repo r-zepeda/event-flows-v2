@@ -63,6 +63,12 @@ span {
     }
 }
 
+@media (max-width: 768px) {
+    .section {
+        padding-inline: 0;
+    }
+}
+
 @media (min-width: 1024px) {
     .section_title > h2{
         font-size: var(--size-5xl);
