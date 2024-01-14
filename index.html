@@ -20,24 +20,19 @@
             <li id="index" class="active">
               <a href="index.html">Home</a>
             </li>
-            <li>
+            <li id="services">
               <a href="services.html">Services</a>
             </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
+            <li id="portfolio">
+              <a href="portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li id="about">
               <a href="about.html">About Us</a>
-            </li>
-            <li>
-              <a href="test.html">Test Me</a>
             </li>
             <li>
               <a href="contact.html" class="button">Contact Us</a>
             </li>
           </ul>
-
-
         </div>
       </header>
 
@@ -81,25 +76,50 @@
           </div>
           <!-- Tab links -->
           <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openCity(event, 'TE')">Tradeshow and Exhibition</button>
+            <button class="tablinks" onclick="openCity(event, 'CS')">Conference and Summit</button>
+            <button class="tablinks" onclick="openCity(event, 'MC')">Music Festival and Concert</button>
+            <button class="tablinks" onclick="openCity(event, 'CE')">Corporate Events</button>
+            <button class="tablinks" onclick="openCity(event, 'SC')">Social and Cultural</button>
+            <button class="tablinks" onclick="openCity(event, 'SS')">Sporting</button>
+            <button class="tablinks" onclick="openCity(event, 'WC')">Wedding and Celebration</button>
           </div>
 
           <!-- Tab content -->
-          <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+          <div id="TE" class="tabcontent" style="display: flex;">
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
+            <div class="tabcontent-info">
+              <h3>Trade Show and Exhibitions</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
           </div>
 
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+          <div id="CS" class="tabcontent">
+            <div class="tabcontent-info">
+              <h3>Conference and Summit</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
           </div>
 
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+          <div id="MC" class="tabcontent">
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
+            <div class="tabcontent-info">
+              <h3>Music Festival and Concert</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
+          </div>
+
+          <div id="CE" class="tabcontent">
+            <div class="tabcontent-info">
+              <h3>Corporate Events</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
           </div>
 
           <script>
@@ -120,7 +140,7 @@
             }
 
             // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(cityName).style.display = "flex";
             evt.currentTarget.className += " active";
           }
           </script>
