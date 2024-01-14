@@ -50,6 +50,10 @@ span {
     width: 80%;
 }
 
+.section_title h2 {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
     .section_title > h2{
         font-size: var(--size-4xl);

@@ -10,6 +10,7 @@ import '../styles/about_hero.css'
 import '../styles/services_cards.css'
 import '../styles/inner_services.css'
 import '../styles/contact.css'
+import '../styles/footer.css'
 import '../styles/test.css'
 // import './scripts'
 
