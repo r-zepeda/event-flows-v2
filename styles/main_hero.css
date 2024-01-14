@@ -114,14 +114,13 @@
     }
 
     .hero__socials {
-        border: 1px solid red;
         display: flex;
         justify-content: center;
     }
     
     .hero__socials ul {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .hero__socials ul li {
