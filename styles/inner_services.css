@@ -1,0 +1,57 @@
+.inner_services {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.inner_services > * {
+    flex: 1;
+    text-align: justify;
+}
+
+.inner_services_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.inner_services_details .section_title {
+    text-align: left;
+    margin-block-end: 2rem;
+}
+
+.isc_image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.book_now {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    background-color: var(--clr-yellow);
+}
+
+.other_services .other_services_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 2rem;
+}
+
+.other_services_title{
+    margin-block-end: 2rem;
+}
+
+.book_other_details_wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}

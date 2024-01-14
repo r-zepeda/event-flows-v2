@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <title>Event Flows - Services</title>
+  </head>
+  <body>
+      <header class="header" id="app">
+        <img src="./assets/images/logo.png" alt="">
+        <div class="header__list">
+          <ul>
+            <li id="index">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li id="about">
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <a href="test.html" class="button">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <div class="contact section">
+          <div class="section_title">
+            <h2>contact <span>us</span></h2>
+            <p>Let's collaborate to orchestrate an exquisitely curated event, where creativity meets precision, turning your vision into a seamlessly executed and unforgettable experience.</p>
+          </div>
+
+          <div class="form_wrapper section">
+            <form action="/submit" method="post">
+
+              <div class="form_wrapper_inner">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Contact Number:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+      
+              <button type="submit" class="button contact_button">Submit</button>
+          </form>
+          </div>
+        </div>
+
+        <div class="book_now section">
+          <div class="book_title">
+            <h3>Other ways to contact us!</h3>
+          </div>
+
+          <div class="book_other_details_wrapper">
+            <a href="facebook.com" class="book_other_details">
+              <p>facebook.com/username</p>
+            </a>
+
+            <a href="facebook.com" class="book_other_details">
+              <p>Tel: +66 123 456 789</p>
+            </a>
+
+            <a href="facebook.com" class="book_other_details">
+              <p>eventflowsbangkok@gmail.com</p>
+            </a>
+
+          </div>
+        </div>
+      </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

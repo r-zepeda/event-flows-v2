@@ -50,6 +50,9 @@
     padding-left: 0;
 }
 
+.hero__socials ul li a {
+    color: var(--clr-slate);
+}
 .hero__socials ul li{
     margin-right: 32px;
 }

@@ -1,0 +1,42 @@
+.form_wrapper {
+    display: flex;
+}
+
+.form_wrapper{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_wrapper_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form_wrapper_inner input,textarea {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.form_wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.form_wrapper form textarea {
+    width: 100%;
+}
+
+.contact_button {
+    width: 200px;
+}

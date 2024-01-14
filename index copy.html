@@ -79,51 +79,49 @@
             <h2>our <span style="color: var(--clr-background);">services</span></h2>
             <p>We can infiltrate any sort of event where our knowledge and experience can offer value, improve the experience for attendees, and create a successful gathering.</p>
           </div>
-          <!-- Tab links -->
-          <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          <div class="services_list slider">
+            <ul class="services_list_inner">
+              <button id="tab1s" class="tab active" onclick="openTab('tab1','tab1s')">Trade Show and Exhibition</button>
+              <button id="tab2s" class="tab" onclick="openTab('tab2','tab2s')">Conference and Summit</button>
+              <button id="tab3s" class="tab" onclick="openTab('tab3','tab3s')">Music Festival and Concert</button>
+              <button id="tab4s" class="tab" onclick="openTab('tab4','tab4s')">Corporate Events</button>
+              <button id="tab5s" class="tab" onclick="openTab('tab5','tab5s')">Social and Cultural</button>
+              <button id="tab6s" class="tab" onclick="openTab('tab6','tab6s')">Sporting</button>
+              <button id="tab7s" class="tab" onclick="openTab('tab7','tab7s')">Wedding and Celebration</button>
+            </ul>
           </div>
 
-          <!-- Tab content -->
-          <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+          <div id="tab1" class="tab-content">
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
+            <div class="tab-content-info">
+              <h3>Trade Show and Exhibitions</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
           </div>
-
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+          <div id="tab2" class="tab-content" style="display:none">
+            <img src="./assets/images/service_tradeshow.jpg" alt="">
+            <div class="tab-content-info">
+              <h3>THIS IS A TEST</h3>
+              <p>We can participate in these events to promote their products or services, engage with potential customers, and create leads.</p>
+              <a href="#" class="button" style="background-color: var(--clr-background);">Read More</a>
+            </div>
           </div>
+          <div id="tab3" class="tab-content" style="display:none">
 
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
           </div>
+          <div id="tab4" class="tab-content" style="display:none">
 
-          <script>
-            function openCity(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
+          </div>
+          <div id="tab5" class="tab-content" style="display:none">
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
+          </div>
+          <div id="tab6" class="tab-content" style="display:none">
 
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
+          </div>
+          <div id="tab7" class="tab-content" style="display:none">
 
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          </script>
+          </div>
         </div>
 
         <div class="events section">
