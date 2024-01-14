@@ -82,11 +82,28 @@
     .hero {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-inline: 0;
+        height: calc(100vh - var(--header-height));
     }
     .hero__inner {
         flex-direction: column;
+    }
 
+    .hero__inner1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__inner1 > *:not(p) {
+        font-size: var(--size-2xl);
+    }
+
+    .hero__changing {
+        font-size: var(--size-6xl);
+    }
     }
     .hero__inner img {
         display: none;
