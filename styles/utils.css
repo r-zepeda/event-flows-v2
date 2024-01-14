@@ -71,6 +71,10 @@ span {
         padding: 0.5rem;
         font-size: var(--size-xs);
     }
+
+    .section_title h2 {
+        font-size: var(--size-6xl);
+    }
 }
 
 @media (min-width: 1024px) {

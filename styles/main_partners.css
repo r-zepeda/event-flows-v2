@@ -21,9 +21,9 @@
     overflow: hidden;
 }
 
-.scroller__inner:hover {
+/* .scroller__inner:hover {
     animation-play-state: paused;
-}
+} */
 
 .scroller__inner {
     width: max-content;
