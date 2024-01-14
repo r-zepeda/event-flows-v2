@@ -104,7 +104,7 @@
     .hero__changing {
         font-size: var(--size-6xl);
     }
-    }
+    
     .hero__inner img {
         display: none;
     }
@@ -121,6 +121,9 @@
 
     .tabcontent {
         flex-direction: column;
+    }
+    br {
+        display: none;
     }
 
 }
