@@ -1,5 +1,5 @@
 .partners {
-    height: 300px;
+    height: auto;
     background-color: rgb(53, 53, 53);
     color: var(--clr-clear);
 }
