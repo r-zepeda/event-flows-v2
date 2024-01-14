@@ -101,7 +101,7 @@
         text-align: center;
     }
 
-    .hero__inner1 > *:not(p) {
+    .hero__inner1 > *:not(p):not(a) {
         font-size: var(--size-3xl);
     }
 

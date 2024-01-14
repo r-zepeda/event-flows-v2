@@ -24,6 +24,7 @@ span {
     background-color: var(--clr-yellow);
     border-radius: 5px;
     color: var(--clr-slate);
+    padding: 0.5rem;
     font-size: var(--size-base);
     font-weight: 600;
     transition: transform 0.3s;
@@ -58,18 +59,11 @@ span {
     .section_title > h2{
         font-size: var(--size-4xl);
     }
-    .button {
-        padding: 4px 8px;
-    }
 }
 
 @media (max-width: 768px) {
     .section {
         padding-inline: 0;
-    }
-    .button {
-        padding: 0.5rem;
-        font-size: var(--size-xs);
     }
 
     .section_title h2 {
@@ -81,16 +75,10 @@ span {
     .section_title > h2{
         font-size: var(--size-5xl);
     }
-    .button {
-        padding: 8px 16px;
-    }
 }
 
 @media (min-width: 1440px) {
     .section_title > h2{
         font-size: var(--size-6xl);
-    }
-    .button {
-        padding: 16px 32px;
     }
 }
