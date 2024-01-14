@@ -12,6 +12,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header__mobile {
+    display: none;
+}
+
+.header__menu {
+    display: none;
+}
+
 .header__list ul li{
     height: 60px;
     display: grid;
@@ -64,6 +72,23 @@
     .header img {
         height: 30px;
         width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__list ul li a {
+        font-size: var(--size-base);
+    }
+    .header img {
+        height: 40px;
+        width: auto;
+    }
+    .header__list {
+        display: none;
+    }
+
+    .header__mobile {
+        display: block;
     }
 }
 
