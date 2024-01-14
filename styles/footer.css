@@ -2,6 +2,13 @@ footer {
     background-color: rgb(53, 53, 53);
     height: auto;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-block: 2rem;
+    padding-inline: 10rem;
+    /* margin-block-end: 2rem; */
 }
 
 
