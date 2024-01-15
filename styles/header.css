@@ -21,9 +21,14 @@
 }
 
 .header__menu {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    transform: translateY(var(--header-height));
     width: 100%;
     height: 50vh;
-    background-color: var(--clr-yellow)
+    background-color: var(--clr-yellow);
 }
 
 .header__menu ul {
@@ -44,7 +49,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.header__menu ul li:last-child {
+    border-bottom: none;
 }
 
 .header__menu ul li > * {
