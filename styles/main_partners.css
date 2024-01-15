@@ -2,6 +2,9 @@
     height: auto;
     background-color: rgb(53, 53, 53);
     color: var(--clr-clear);
+    margin-bottom: 0;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
 }
 
 .partners .section_title > * {
