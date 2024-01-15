@@ -1,16 +1,40 @@
 footer {
     background-color: rgb(53, 53, 53);
+    border-top-right-radius:  100px;
+    border-top-left-radius:  100px;
     height: auto;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-block: 2rem;
-    padding-inline: 10rem;
+    padding-block-start: 5rem;
+    padding-block-end: 1rem;
+    padding-inline: 2rem;
     /* margin-block-end: 2rem; */
 }
 
+.newsletter a {
+    width: 40%;
+    text-align: center;
+    padding: 0.5rem;
+    color: black;
+}
+
+.footer_heading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer_heading h2 {
+    font-size: var(--size-5xl);
+    letter-spacing: 1.5rem;
+    margin-right: -1.5rem;
+}
 
 .footer_section_wrapper {
     display: flex;
@@ -18,8 +42,9 @@ footer {
     gap: 2rem;
     width: 100%;
     height: 100%;
-
+    position: relative;
 }
+
 
 .footer_section_wrapper > * {
     flex: 1;

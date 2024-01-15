@@ -7,6 +7,9 @@
     --clr-slate: rgb(37, 52, 65);
     --clr-salmon: rgb(249, 176, 143);
     --clr-powderblue: rgb(149, 203, 200);
+    --clr-accentred: #f8205f;
+    --clr-accentblue: #008dd6;
+    --clr-accentgreen: #43c1b5;
 
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
