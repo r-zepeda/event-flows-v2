@@ -16,6 +16,9 @@
     align-items: flex-start;
 }
 
+.inner_services_details p{
+    padding-right: 4rem;
+}
 
 .inner_services_details .section_title {
     text-align: left;
@@ -25,7 +28,9 @@
 .isc_image {
     border-radius: 10px;
     overflow: hidden;
+    height: 60vh;
 }
+
 
 .book_now {
     height: 200px;
