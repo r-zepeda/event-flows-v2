@@ -53,7 +53,12 @@
 .services_cards_details p {
     display: none;
     text-align: justify;
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
+    line-height: 1rem;
+}
+
+.services_cards_details h3 {
+    font-size: var(--size-sm);
 }
 
 .services_cards_details > * {

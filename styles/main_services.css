@@ -85,6 +85,7 @@
     transition: transform 0.3s;
 }
 
+
 @keyframes bounce {
     from {
         transform: translateY(10px);
