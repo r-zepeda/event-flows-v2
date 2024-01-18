@@ -76,12 +76,14 @@
 @media (min-width: 768px) {
     .services_cards {
         height: 250px;
+        min-width: 230px;
     }
 }
 
 @media (min-width: 1024px) {
     .services_cards {
         height: 350px;
+        min-width: 280px;
     }
 }
 
