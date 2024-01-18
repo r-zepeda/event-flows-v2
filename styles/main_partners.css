@@ -3,8 +3,14 @@
     background-color: rgb(53, 53, 53);
     color: var(--clr-clear);
     margin-bottom: 0;
-    border-top-right-radius: 100px;
+    padding-block: 4rem;
+    padding-inline: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .partners .section_title > * {
