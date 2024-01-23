@@ -70,10 +70,6 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-
-
-
-
 .test {
     background-color: var(--clr-powderblue);
     height: 100px;
