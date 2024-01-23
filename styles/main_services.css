@@ -1,12 +1,18 @@
 .services {
-    background-color: var(--clr-yellow);
+
+    width: 100vw;
     height: auto;
     padding-block: 5rem;
     position: relative;
 }
 
-.services::before,
-.services::after {
+.services_background {
+    background-color: var(--clr-yellow);
+    position: relative;
+}
+
+.services_background::before,
+.services_background::after {
     content: '';
     position: absolute;
     left: 0;
@@ -15,11 +21,11 @@
     background-color: var(--clr-background);
 }
 
-.services::before {
+.services_background::before {
     top: 20px;
 }
 
-.services::after {
+.services_background::after {
     bottom: 20px;
 }
 
