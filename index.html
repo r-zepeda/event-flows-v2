@@ -1,93 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Event Flow Bangkok</title>
   </head>
   <body>
-      <header class="header" id="app">
-        <img src="./assets/images/logo.png" alt="">
-        <div class="header__list">
-          <ul>
-            <li id="index" class="active">
-              <a href="index.html">Home</a>
-            </li>
-            <li id="services">
-              <a href="services.html">Services</a>
-            </li>
-            <li id="portfolio">
-              <a href="portfolio.html">Portfolio</a>
-            </li>
-            <li id="about">
-              <a href="about.html">About Us</a>
-            </li>
-            <li>
-              <a href="contact.html" class="button">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__mobile">
-          <a href="javascript:void(0);" class="header_icon icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-
-        <script>
-          function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-        </script>
-      </header>
-      <div class="header__menu" id="myLinks">
+    <header class="header" id="app">
+      <img src="./assets/images/logo.png" alt="" />
+      <div class="header__list">
         <ul>
-          <li>
+          <li id="index" class="active">
             <a href="index.html">Home</a>
           </li>
-          <li>
+          <li id="services">
             <a href="services.html">Services</a>
           </li>
-          <li>
+          <li id="portfolio">
             <a href="portfolio.html">Portfolio</a>
           </li>
-          <li>
+          <li id="about">
             <a href="about.html">About Us</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="button">Contact Us</a>
           </li>
         </ul>
       </div>
-      <main>
+      <div class="header__mobile">
+        <a
+          href="javascript:void(0);"
+          class="header_icon icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </header>
+    <div class="header__menu" id="myLinks">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <div class="hero_background">
+        <div class="custom-shape-divider-bottom-1706944670">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <div class="hero section">
           <div class="hero__inner">
             <div class="hero__inner1">
-              <div style="font-family: 'Outfit', sans-serif;">
+              <div style="font-family: 'Outfit', sans-serif">
                 <h1>embark on a</h1>
                 <h1 class="hero__changing" id="changingText">delightful</h1>
-                <h1>experience</h1>    
+                <h1>experience</h1>
               </div>
-              <p>Experience the extraordinary: Where moments become memories,  <br> join us for an unforgettable journey at Event Flow Bangkok</p>
-              <a href='services.html' class="hero_get_started button">Get Started</a>
+              <p>
+                Experience the extraordinary: Where moments become memories,
+                <br />
+                join us for an unforgettable journey at Event Flow Bangkok
+              </p>
+              <a href="services.html" class="hero_get_started button"
+                >Get Started</a
+              >
             </div>
-            <img src="./assets/images/hero_image.png" alt="">
+            <img src="./assets/images/hero_image.png" alt="" />
           </div>
-
-
-          <div class="hero__socials">
+          <!-- <div class="hero__socials">
             <ul>
               <li>
                 <a href="https://www.facebook.com/EventFlowBangkok">Facebook</a>
@@ -99,240 +140,426 @@
                 <a href="https://www.instagram.com">Instagram</a>
               </li>
             </ul>
-
             <div class="hero__socials__divider"></div>
-          </div>
+          </div> -->
         </div>
+      </div>
 
-        <div class="services_background">
-          <div class="services section">
-            <div class="section_title">
-              <h2>our <span style="color: var(--clr-background);">services</span></h2>
-              <p>We can infiltrate any sort of event where our knowledge and experience can offer value, improve the experience for attendees, and create a successful gathering.</p>
-            </div>
-            <!-- Tab links -->
-            <div class="tab">
-              <button class="tablinks active" onclick="openCity(event, 'TE')">Tradeshow and Exhibition</button>
-              <button class="tablinks" onclick="openCity(event, 'CS')">Conference and Summit</button>
-              <button class="tablinks" onclick="openCity(event, 'MC')">Music Festival and Concert</button>
-              <button class="tablinks" onclick="openCity(event, 'CE')">Corporate Events</button>
-              <button class="tablinks" onclick="openCity(event, 'SC')">Social and Cultural</button>
-              <button class="tablinks" onclick="openCity(event, 'SS')">Sporting Events</button>
-              <button class="tablinks" onclick="openCity(event, 'WC')">Wedding and Celebration</button>
-              <button class="tablinks" onclick="openCity(event, 'PC')">Personal Concierge</button>
-              <button class="tablinks" onclick="openCity(event, 'EV')">Event Venue</button>
-            </div>
-            <!-- Tab content -->
-            <div id="TE" class="tabcontent" style="display: flex;">
-              <img src="./assets/images/services/trade shows.jpg" alt="" loading='lazy'>
-              <div class="tabcontent-info">
-                <h2>Trade Show and Exhibitions</h2>
-                <p>
-                  Our Event Flow team collaborates with partners for comprehensive event planning, covering floor plans, booth layouts, and activity scheduling. We guide exhibitors, supervise onsite operations, address challenges, and analyze event progress for continuous improvement. Our adaptive team excels in quick problem-solving and thrives in fast-paced trade fair settings.
-                </p>
-                <a href="services_1.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="CS" class="tabcontent">
-              <img src="./assets/images/services/conference.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Conference and Summit</h2>
-                <p>
-                  Our team meticulously manages conference budgets, covering all costs. With strong organizational and communication skills, creativity, and versatility, we ensure conferences meet objectives, provide a valuable experience, and leave a lasting impression through effective preparation and implementation.
-                </p>
-                <a href="services_2.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="MC" class="tabcontent">
-              <img src="./assets/images/services/music.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Music Festival and Concert</h2>
-                <p>
-                  Our team crafts a comprehensive marketing strategy, utilizing social media, traditional advertising, and online channels. We collaborate with designers for visually appealing materials and PR firms for media coverage. Our professionals ensure flawless event logistics, marketing, and financial management for an engaging and unforgettable participant experience.
-                </p>
-                <a href="services_3.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="CE" class="tabcontent">
-              <img src="./assets/images/services/corporate.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Corporate Events</h2>
-                <p>
-                  We specialize in creating memorable business events, handling everything from conferences to product launches. Our trained specialists ensure precise execution, managing venue selection, logistics, catering, audio-visual setups, and entertainment. With a reliable network of vendors, we deliver high-quality services at reasonable prices.
-                </p>
-                <a href="services_4.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="SC" class="tabcontent">
-              <img src="./assets/images/services/cultural.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Social and Cultural</h2>
-                <p>
-                  This role provides an extraordinary chance to immerse attendees in the dynamic world of cultural festivals. From choosing the theme and location to arranging performances, displays, and culinary experiences, our keen eye for detail will guarantee that every part of the event represents the depth and diversity of our client's cultural heritage.
-                </p>
-                <a href="services_5.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="SS" class="tabcontent">
-              <img src="./assets/images/services/sport.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Sporting Events</h2>
-                <p>
-                  We've left no stone unturned to make this event smooth and unforgettable. From world-class venues to simple transportation, we aim for the highest comfort and convenience for our audience. Enjoy every moment of the sports spectacle, from heart-pounding track and field to nail-biting basketball. Our event is not just about rivalry; it's about delivering a memorable experience for everyone attending.
-                </p>
-                <a href="services_6.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="WC" class="tabcontent">
-              <img src="./assets/images/services/wedding.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Wedding and Celebration</h2>
-                <p>
-                  Specializing in exceptional events like weddings, receptions, anniversaries, and more, we work closely with you to capture your unique style and preferences. From initial consultation to final farewell, our team manages every detail – choosing beautiful locations, handling vendor reservations, and arranging exquisite decor – ensuring a magnificent environment that reflects your desires.
-                </p>
-                <a href="services_7.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="PC" class="tabcontent">
-              <img src="./assets/images/services/concierge.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Personal Concierge</h2>
-                <p>
-                  We handle all aspects of your event, ensuring it's flawless and unforgettable. Our professional organizers work closely with you, managing events of all sizes. Let our concierge service handle the details, allowing you to focus on enjoying your event. Contact us to reserve our services for a unique event-planning experience.
-                </p>
-                <a href="services_8.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <div id="EV" class="tabcontent">
-              <img src="./assets/images/services/event.jpg" alt="">
-              <div class="tabcontent-info">
-                <h2>Event Venue</h2>
-                <p>
-                  As industry professionals, our team of professionals has significant expertise and contacts with a wide range of venues, from conference rooms and hotels to outdoor areas and unusual locales. We can suggest the best venue depending on the client's needs, such as the type of event, budget, location, capacity, and theme. By evaluating these factors, we, the event organizers may choose a venue that fits our client's vision and assures a successful and memorable event.
-                </p>
-                <a href="services_9.html" class="button" style="background-color: var(--clr-background);">Read More</a>
-              </div>
-            </div>
-            <script>
-              function openCity(evt, cityName) {
-                // Declare all variables
-                var i, tabcontent, tablinks;
-                // Get all elements with class="tabcontent" and hide them
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                  tabcontent[i].style.display = "none";
-                }
-                // Get all elements with class="tablinks" and remove the class "active"
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                // Show the current tab, and add an "active" class to the button that opened the tab
-                document.getElementById(cityName).style.display = "flex";
-                evt.currentTarget.className += " active";
-              }
-            </script>
-          </div>
-        </div>
-
-        <div class="events section">
+      <div class="services_background">
+        <div class="services section">
           <div class="section_title">
-            <h2>our <span>events</span></h2>
+            <h2>
+              our <span style="color: var(--clr-background)">services</span>
+            </h2>
             <p>
-              Welcome to Event Flow Bangkok, where we understand the significance of crafting seamless and unforgettable event experiences. With a commitment to excellence, our dedicated team offers a diverse range of services, ensuring that every detail of your special occasion is meticulously taken care of.
+              We can infiltrate any sort of event where our knowledge and
+              experience can offer value, improve the experience for attendees,
+              and create a successful gathering.
             </p>
           </div>
-
-          <div class="services_wrapper">
-            <a class="services_cards" style="cursor: default;">
-              <div class="services_image">
-                <img src="./assets/images/events/event1.jpg" alt="" loading='lazy'>
-              </div>
-              <div class="services_cards_details">
-                <h3>Tailored Planning for Your Vision:</h3>
-                <p>
-                  At Event Flow Bangkok, our event planners and managers collaborate closely with you to grasp your goals, budget, and the vision you have for your event. Through this partnership, we create a personalized strategy that not only aligns with your individual needs but also surpasses your expectations. From venue selection to event design, production, and logistics, we handle every aspect, ensuring a bespoke approach for each event.
-                </p>
-              </div>
-            </a>
-
-            <a class="services_cards" style="cursor: default;">
-              <div class="services_image">
-                <img src="./assets/images/events/event2.jpg" alt="">
-              </div>
-              <div class="services_cards_details">
-                <h3>Aesthetic Excellence in Execution:</h3>
-                <p>Our commitment extends beyond meticulous planning to flawless execution. Event Flow Bangkok takes charge of audiovisual equipment, lighting, staging, and décor, ensuring that every facet of your event is visually appealing and compelling. Our experienced crew works tirelessly to transform your vision into a captivating reality, leaving a lasting impression on your attendees.</p>
-              </div>
-            </a>
-
-            <a class="services_cards" style="cursor: default;">
-              <div class="services_image">
-                <img src="./assets/images/events/event3.jpg" alt="">
-              </div>
-              <div class="services_cards_details">
-                <h3>Comprehensive Event Management and Marketing:</h3>
-                <p>
-                  Specializing in both event management and marketing, we go beyond the logistics. Our team develops effective marketing campaigns to generate buzz and enthusiasm around your event, ensuring maximum attendance and media attention. During the event, our specialized personnel are on-site to supervise all aspects, managing suppliers and ensuring a seamless flow. This allows you to focus on networking and building relationships, confident that every detail is being expertly handled.
-                </p>
-              </div>
-            </a>
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'TE')">
+              Tradeshow and Exhibition
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'CS')">
+              Conference and Summit
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'MC')">
+              Music Festival and Concert
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'CE')">
+              Corporate Events
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'SC')">
+              Social and Cultural
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'SS')">
+              Sporting Events
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'WC')">
+              Wedding and Celebration
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'PC')">
+              Personal Concierge
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'EV')">
+              Event Venue
+            </button>
           </div>
+          <!-- Tab content -->
+          <div id="TE" class="tabcontent" style="display: flex">
+            <img
+              src="./assets/images/services/trade shows.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <div class="tabcontent-info">
+              <h2>Trade Show and Exhibitions</h2>
+              <p>
+                Our Event Flow team collaborates with partners for comprehensive
+                event planning, covering floor plans, booth layouts, and
+                activity scheduling. We guide exhibitors, supervise onsite
+                operations, address challenges, and analyze event progress for
+                continuous improvement. Our adaptive team excels in quick
+                problem-solving and thrives in fast-paced trade fair settings.
+              </p>
+              <a
+                href="services_1.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="CS" class="tabcontent">
+            <img src="./assets/images/services/conference.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Conference and Summit</h2>
+              <p>
+                Our team meticulously manages conference budgets, covering all
+                costs. With strong organizational and communication skills,
+                creativity, and versatility, we ensure conferences meet
+                objectives, provide a valuable experience, and leave a lasting
+                impression through effective preparation and implementation.
+              </p>
+              <a
+                href="services_2.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="MC" class="tabcontent">
+            <img src="./assets/images/services/music.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Music Festival and Concert</h2>
+              <p>
+                Our team crafts a comprehensive marketing strategy, utilizing
+                social media, traditional advertising, and online channels. We
+                collaborate with designers for visually appealing materials and
+                PR firms for media coverage. Our professionals ensure flawless
+                event logistics, marketing, and financial management for an
+                engaging and unforgettable participant experience.
+              </p>
+              <a
+                href="services_3.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="CE" class="tabcontent">
+            <img src="./assets/images/services/corporate.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Corporate Events</h2>
+              <p>
+                We specialize in creating memorable business events, handling
+                everything from conferences to product launches. Our trained
+                specialists ensure precise execution, managing venue selection,
+                logistics, catering, audio-visual setups, and entertainment.
+                With a reliable network of vendors, we deliver high-quality
+                services at reasonable prices.
+              </p>
+              <a
+                href="services_4.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="SC" class="tabcontent">
+            <img src="./assets/images/services/cultural.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Social and Cultural</h2>
+              <p>
+                This role provides an extraordinary chance to immerse attendees
+                in the dynamic world of cultural festivals. From choosing the
+                theme and location to arranging performances, displays, and
+                culinary experiences, our keen eye for detail will guarantee
+                that every part of the event represents the depth and diversity
+                of our client's cultural heritage.
+              </p>
+              <a
+                href="services_5.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="SS" class="tabcontent">
+            <img src="./assets/images/services/sport.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Sporting Events</h2>
+              <p>
+                We've left no stone unturned to make this event smooth and
+                unforgettable. From world-class venues to simple transportation,
+                we aim for the highest comfort and convenience for our audience.
+                Enjoy every moment of the sports spectacle, from heart-pounding
+                track and field to nail-biting basketball. Our event is not just
+                about rivalry; it's about delivering a memorable experience for
+                everyone attending.
+              </p>
+              <a
+                href="services_6.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="WC" class="tabcontent">
+            <img src="./assets/images/services/wedding.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Wedding and Celebration</h2>
+              <p>
+                Specializing in exceptional events like weddings, receptions,
+                anniversaries, and more, we work closely with you to capture
+                your unique style and preferences. From initial consultation to
+                final farewell, our team manages every detail – choosing
+                beautiful locations, handling vendor reservations, and arranging
+                exquisite decor – ensuring a magnificent environment that
+                reflects your desires.
+              </p>
+              <a
+                href="services_7.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="PC" class="tabcontent">
+            <img src="./assets/images/services/concierge.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Personal Concierge</h2>
+              <p>
+                We handle all aspects of your event, ensuring it's flawless and
+                unforgettable. Our professional organizers work closely with
+                you, managing events of all sizes. Let our concierge service
+                handle the details, allowing you to focus on enjoying your
+                event. Contact us to reserve our services for a unique
+                event-planning experience.
+              </p>
+              <a
+                href="services_8.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div id="EV" class="tabcontent">
+            <img src="./assets/images/services/event.jpg" alt="" />
+            <div class="tabcontent-info">
+              <h2>Event Venue</h2>
+              <p>
+                As industry professionals, our team of professionals has
+                significant expertise and contacts with a wide range of venues,
+                from conference rooms and hotels to outdoor areas and unusual
+                locales. We can suggest the best venue depending on the client's
+                needs, such as the type of event, budget, location, capacity,
+                and theme. By evaluating these factors, we, the event organizers
+                may choose a venue that fits our client's vision and assures a
+                successful and memorable event.
+              </p>
+              <a
+                href="services_9.html"
+                class="button"
+                style="background-color: var(--clr-background)"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <script>
+            function openCity(evt, cityName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                  " active",
+                  ""
+                );
+              }
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(cityName).style.display = "flex";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+        </div>
+        <div class="custom-shape-divider-bottom-1706945003">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="events section">
+        <div class="section_title">
+          <h2>our <span>events</span></h2>
+          <p>
+            Welcome to Event Flow Bangkok, where we understand the significance
+            of crafting seamless and unforgettable event experiences. With a
+            commitment to excellence, our dedicated team offers a diverse range
+            of services, ensuring that every detail of your special occasion is
+            meticulously taken care of.
+          </p>
         </div>
 
-        <div class="partners">
-          <div class="section_title">
-            <h2>our partners</h2>
-            <p>Our team at Event Flow Bangkok understands the importance of creating a seamless and memorable event experience. We provide a broad variety of services to guarantee that every detail of your special occasion is taken care of.</p>
-          </div>
-
-          <div class="scroller">
-            <div class="scroller__inner">
-              <img src="./assets/images/partners/3m.svg" alt="">
-              <img src="./assets/images/partners/barstool-store.svg" alt="">
-              <img src="./assets/images/partners/budweiser.svg" alt="" srcset="">
-              <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="">
-              <img src="./assets/images/partners/forbes.svg" alt="" srcset="">
-              <img src="./assets/images/partners/macys.svg" alt="" srcset="">
-              <img src="./assets/images/partners/menshealth.svg" alt="" srcset="">
-              <img src="./assets/images/partners/mrbeast.svg" alt="">
-              <img src="./assets/images/partners/3m.svg" alt="">
-              <img src="./assets/images/partners/barstool-store.svg" alt="">
-              <img src="./assets/images/partners/budweiser.svg" alt="" srcset="">
-              <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="">
-              <img src="./assets/images/partners/forbes.svg" alt="" srcset="">
-              <img src="./assets/images/partners/macys.svg" alt="" srcset="">
-              <img src="./assets/images/partners/menshealth.svg" alt="" srcset="">
-              <img src="./assets/images/partners/mrbeast.svg" alt="">
+        <div class="services_wrapper">
+          <a class="services_cards" style="cursor: default">
+            <div class="services_image">
+              <img
+                src="./assets/images/events/event1.jpg"
+                alt=""
+                loading="lazy"
+              />
             </div>
-          </div>
+            <div class="services_cards_details">
+              <h3>Tailored Planning for Your Vision:</h3>
+              <p>
+                At Event Flow Bangkok, our event planners and managers
+                collaborate closely with you to grasp your goals, budget, and
+                the vision you have for your event. Through this partnership, we
+                create a personalized strategy that not only aligns with your
+                individual needs but also surpasses your expectations. From
+                venue selection to event design, production, and logistics, we
+                handle every aspect, ensuring a bespoke approach for each event.
+              </p>
+            </div>
+          </a>
+
+          <a class="services_cards" style="cursor: default">
+            <div class="services_image">
+              <img src="./assets/images/events/event2.jpg" alt="" />
+            </div>
+            <div class="services_cards_details">
+              <h3>Aesthetic Excellence in Execution:</h3>
+              <p>
+                Our commitment extends beyond meticulous planning to flawless
+                execution. Event Flow Bangkok takes charge of audiovisual
+                equipment, lighting, staging, and décor, ensuring that every
+                facet of your event is visually appealing and compelling. Our
+                experienced crew works tirelessly to transform your vision into
+                a captivating reality, leaving a lasting impression on your
+                attendees.
+              </p>
+            </div>
+          </a>
+
+          <a class="services_cards" style="cursor: default">
+            <div class="services_image">
+              <img src="./assets/images/events/event3.jpg" alt="" />
+            </div>
+            <div class="services_cards_details">
+              <h3>Comprehensive Event Management and Marketing:</h3>
+              <p>
+                Specializing in both event management and marketing, we go
+                beyond the logistics. Our team develops effective marketing
+                campaigns to generate buzz and enthusiasm around your event,
+                ensuring maximum attendance and media attention. During the
+                event, our specialized personnel are on-site to supervise all
+                aspects, managing suppliers and ensuring a seamless flow. This
+                allows you to focus on networking and building relationships,
+                confident that every detail is being expertly handled.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="section_title">
+          <h2>our partners</h2>
+          <p>
+            Our team at Event Flow Bangkok understands the importance of
+            creating a seamless and memorable event experience. We provide a
+            broad variety of services to guarantee that every detail of your
+            special occasion is taken care of.
+          </p>
         </div>
 
-      </main>
-
-      <footer>
-          <div class="footer_section_wrapper">
-            <div class="footer_section footer_heading">
-              <h4>Event Flow Bangkok</h4>
-              <h2 style="color: var(--clr-accentred);">ART</h2>
-              <h2 style="color: var(--clr-accentblue);">EXP</h2>
-              <h2 style="color:var(--clr-yellow)">FUN</h2>
-              <h4>Experience the extraordinary.</h4>
-            </div>
-            <div class="footer_menu">
-              <h2>Menu</h2>
-              <div class="footer_links">
-                <ul>
-                  <li><a href="index.html" >Home</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
+        <div class="scroller">
+          <div class="scroller__inner">
+            <img src="./assets/images/partners/3m.svg" alt="" />
+            <img src="./assets/images/partners/barstool-store.svg" alt="" />
+            <img
+              src="./assets/images/partners/budweiser.svg"
+              alt=""
+              srcset=""
+            />
+            <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="" />
+            <img src="./assets/images/partners/forbes.svg" alt="" srcset="" />
+            <img src="./assets/images/partners/macys.svg" alt="" srcset="" />
+            <img
+              src="./assets/images/partners/menshealth.svg"
+              alt=""
+              srcset=""
+            />
+            <img src="./assets/images/partners/mrbeast.svg" alt="" />
+            <img src="./assets/images/partners/3m.svg" alt="" />
+            <img src="./assets/images/partners/barstool-store.svg" alt="" />
+            <img
+              src="./assets/images/partners/budweiser.svg"
+              alt=""
+              srcset=""
+            />
+            <img src="./assets/images/partners/buzzfeed.svg" alt="" srcset="" />
+            <img src="./assets/images/partners/forbes.svg" alt="" srcset="" />
+            <img src="./assets/images/partners/macys.svg" alt="" srcset="" />
+            <img
+              src="./assets/images/partners/menshealth.svg"
+              alt=""
+              srcset=""
+            />
+            <img src="./assets/images/partners/mrbeast.svg" alt="" />
           </div>
-      </footer>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_section_wrapper">
+        <div class="footer_section footer_heading">
+          <h4>Event Flow Bangkok</h4>
+          <h2 style="color: var(--clr-accentred)">ART</h2>
+          <h2 style="color: var(--clr-accentblue)">EXP</h2>
+          <h2 style="color: var(--clr-yellow)">FUN</h2>
+          <h4>Experience the extraordinary.</h4>
+        </div>
+        <div class="footer_menu">
+          <h2>Menu</h2>
+          <div class="footer_links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
